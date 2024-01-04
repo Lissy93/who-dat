@@ -1,0 +1,54 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  .left p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    transform: rotate(-6deg);
+    margin: 0 1rem;
+    font-style: italic;
+  }
+  nav {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1rem 0;
+    a {
+      background: var(--foreground);
+      color: var(--background);
+      padding: 0.25rem 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: all 0.25s ease-in-out;
+      min-width: 5rem;
+      text-align: center;
+      &:hover {
+        transform: rotate(6deg);
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 1rem auto 0;
+  width: calc(90% - 2rem);
+  max-width: 800px;
+  border-radius: 2px;
+
+  background: var(--foreground);
+  color: var(--background);
+  font-weight: bold;
+  padding: 0 1rem;
+
+  a {
+    color: var(--background);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

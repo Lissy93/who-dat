@@ -1,0 +1,17 @@
+
+section {
+  margin: 2rem auto;
+  width: calc(90% - 2rem);
+  max-width: 50rem;
+  padding: 1rem;
+
+  border: 3px solid var(--foreground);
+  border-radius: 2px;
+  box-shadow: 3px 3px 0px var(--background), 6px 6px 0px var(--foreground);
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 0 var(--foreground), 6px 6px 0px var(--foreground);
+  }
+}
+

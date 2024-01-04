@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Dat - Free & Open Source WHOIS Lookup API</title>
+
+    <style>html {background: #000; color: #FFF; } </style>
+  </head>
+  <body>
+
+    <!-- Page title and navigation -->
+    <header>
+      <div class="left">
+        <h1>Who Dat?</h1>
+        <p>Free & Open Source WHOIS Lookup Service</p>
+      </div>
+      <nav>
+        <a href="#">Public API</a>
+        <a href="#">Self-Hosting</a>
+        <a href="#">GitHub</a>
+      </nav>
+    </header>
+
+    <!-- WhoIs Lookup -->
+    <section class="lookup">
+      <h2>WHOIS Lookup</h2>
+      <form>
+        <input type="text" placeholder="Enter a domain name" />
+        <button type="submit">Lookup</button>
+      </form>
+    </section>
+
+    <!-- API Docs -->
+    <section class="api">
+      <h2>Public API</h2>
+      <p>
+        Our public API is free to use without needing any authentication or CORS headers.
+      </p>
+      <code>curl https://who-dat.as93.net/example.com</code>
+      <p>
+        <a href="#">View API Documentation</a>
+      </p>
+    </section>
+
+    <!-- Self-Hosting Docs -->
+    <section class="host">
+      <h2>Self-Hosting</h2>
+      <p>
+        Self-hosting Who Dat is easy!
+        Either pull the Docker image, use the 1-click Vercel deploy, or the download or build the binary yourself.
+      </p>
+      <code>docker run -p 8080:8080 lissy93/who-dat</code>
+      <p>Or</p>
+      <a><button class="small">1-Click Deploy to Vercel</button></a>
+      <p>
+        <a href="#">View Self-Hosting Documentation</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      Built with ❤️ by <a href="https://aliciasykes.com">Alicia Sykes</a>.
+      Licensed under <a href="https://github.com/lissy93/who-dat/blob/HEAD/LICENSE">MIT</a> © 2024.
+      Source available on <a href="https://github.com/lissy93/who-dat">GitHub</a>.
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

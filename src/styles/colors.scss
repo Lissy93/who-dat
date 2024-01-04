@@ -1,0 +1,12 @@
+:root {
+  --foreground: #FFF;
+  --background: #000;
+  --accent: #50fb93;
+  --midground: #1a1a1a;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+
+  }
+}

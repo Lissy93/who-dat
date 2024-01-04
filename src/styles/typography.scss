@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,900;1,300&display=swap');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+h1 {
+  height: fit-content;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  background: var(--foreground);
+  color: var(--background);
+  padding: 0 1rem;
+  font-size: 6rem;
+  transform: rotate(-6deg);
+}
+
+h2 {
+  background: var(--foreground);
+  color: var(--background);
+  margin: 0 0 1rem 0;
+  width: fit-content;
+  padding: 0 0.5rem;
+  transform: translateX(-1rem) translateY(-1rem);
+  font-size: 2rem;
+}

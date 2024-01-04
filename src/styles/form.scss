@@ -1,0 +1,54 @@
+form {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+input {
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--midground);
+  color: var(--foreground);
+  transition: border-color 0.25s;
+  width: 100%;
+  flex: 1;
+  border: 2px solid transparent;
+  &:focus,
+  &:focus-visible {
+    border: 2px solid var(--accent);
+    outline: none;
+  }
+}
+
+button {
+  border-radius: 2px;
+  padding: 0.6em 1.2em;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--midground);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border: 2px solid transparent;
+  &:hover {
+    border-color: var(--accent);
+  }
+  &:focus, &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  &.small {
+    font-size: 1em;
+    padding: 0.4em 0.8em;
+  }
+}
+
+
+code {
+  padding: 0.6em 1.2em;
+  border-radius: 2px;
+  background: var(--midground);
+}
