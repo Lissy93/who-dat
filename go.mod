@@ -1,6 +1,6 @@
 module github.com/lissy93/who-dat
 
-go 1.14
+go 1.16
 
 require (
 	github.com/json-iterator/go v1.1.9
