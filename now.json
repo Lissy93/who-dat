@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "github": {
+    "enabled": true,
+    "silent": true
+  },
+  "builds": [
+    {
+      "src": "api/**/*.go",
+      "use": "@vercel/go"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/api/index.go" },
+    { "src": "/ping", "dest": "/api/ping.go" },
+    { "src": "/multi:domains*", "dest": "/api/multi.go" },
+    { "src": "/(.*)", "dest": "/api/index.go" }
+  ]
+}
