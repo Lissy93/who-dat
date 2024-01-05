@@ -4,9 +4,6 @@
     "enabled": true,
     "silent": true
   },
-  "scripts": {
-    "build": "vite build"
-  },
   "builds": [
     {
       "src": "api/**/*.go",
