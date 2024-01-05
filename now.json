@@ -4,14 +4,24 @@
     "enabled": true,
     "silent": true
   },
+  "scripts": {
+    "build": "vite build"
+  },
   "builds": [
     {
       "src": "api/**/*.go",
       "use": "@vercel/go"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {"distDir": "dist"}
     }
   ],
   "routes": [
-    { "src": "/", "dest": "/api/index.go" },
+    {
+      "handle": "filesystem"
+    },
     { "src": "/ping", "dest": "/api/ping.go" },
     { "src": "/multi:domains*", "dest": "/api/multi.go" },
     { "src": "/(.*)", "dest": "/api/index.go" }
