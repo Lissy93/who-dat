@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-dev": "npx vercel dev"
   },
   "devDependencies": {
     "@types/alpinejs": "^3.13.6",
