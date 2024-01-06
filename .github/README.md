@@ -1,5 +1,4 @@
 
-<h1 align="center">Who Dat?</h1>
 <p align="center">
 <img src="https://i.ibb.co/J5r1zCP/who-dat-square.png" width="128" /><br />
 <i>Free & Open Source WHOIS Lookup Service</i>
@@ -13,7 +12,10 @@
 
 > **TL;DR** Get the WHOIS records for a site: `curl https://who-dat.as93.net/example.com`
 
-For detailed request + response schemas, and to try the API out, you can reference the [Swagger Docs](https://who-dat.as93.net/docs.html)
+For detailed request + response schemas, and to try the API out, you can reference the [spec](https://who-dat.as93.net/docs.html)
+
+[![Who-Dat Swagger Docs](https://img.shields.io/badge/Swagger-Docs-85EA2D?style=for-the-badge&logo=swagger&labelColor=1b2744&link=https%3A%2F%2Fwho-dat.as93.net%2Fdocs.html)](https://who-dat.as93.net/docs.html)
+
 
 ### Base URL
 
@@ -97,21 +99,53 @@ curl "https://who-dat.as93.net/multi?domains=example.com,example.net"
 
 #### Option 1: Vercel
 
-Click the button below to deploy to Vercel 👇
+This is the quickest and easiest way to get up-and-running. Simply fork the repository, then login to Vercel (using GitHub), and after importing your fork, it will be deployed! There's no additional config or keys needed, and it should work just fine on the free plan.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fwho-dat&demo-title=Who-Dat%20Demo&demo-url=https%3A%2F%2Fwho-dat.as93.net&demo-image=https%3A%2F%2Fi.ibb.co%2FJ5r1zCP%2Fwho-dat-square.png)
+Alternativley, just hit the button below for 1-click deploy 👇
+
+[![1-Click Deploy to Vercel](https://img.shields.io/badge/Deploy-Vercel-ffffff?style=for-the-badge&logo=vercel&labelColor=1b2744&link=https%3A%2F%2Fwho-dat.as93.net%2Fdocs.html)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fwho-dat&demo-title=Who-Dat%20Demo&demo-url=https%3A%2F%2Fwho-dat.as93.net&demo-image=https%3A%2F%2Fi.ibb.co%2FJ5r1zCP%2Fwho-dat-square.png)
 
 #### Option 2: Docker
 
-The Docker image is published to DockerHub ([hub.docker.com/r/lissy93/who-dat](https://hub.docker.com/r/lissy93/who-dat)), as well as GHCR
+The light-weight Docker image is published to DockerHub ([hub.docker.com/r/lissy93/who-dat](https://hub.docker.com/r/lissy93/who-dat)), as well as GHCR ([here](https://github.com/Lissy93/who-dat/pkgs/container/who-dat)).
+
+Providing you've got Docker installed, you can get everything by running:
 
 ```shell
-docker run -p 8080:8080 lissy93/who-dat
+docker run -p 8080:8080 --dns 8.8.8.8 --dns 8.8.4.4 lissy93/who-dat
 ```
+
+[![Deploy from Docker](https://img.shields.io/badge/Deploy-Docker-2496ED?style=for-the-badge&logo=docker&labelColor=1b2744&link=https%3A%2F%2Fwho-dat.as93.net%2Fdocs.html)](https://hub.docker.com/r/lissy93/who-dat)
+
 
 #### Option 3: Binary
 
-Head to the [Releases Tab](https://github.com/Lissy93/who-dat/releases), download the pre-built executable for your system, then run it.
+Head to the [Releases Tab](https://github.com/Lissy93/who-dat/releases), download and extract the pre-built executable for your system, then run it.
+
+<details>
+
+<summary>Example</summary>
+
+If you're using the command line, you can do something like this<br>
+Don't forget to update (v1.0) with the version number you want, and (linux-amd64) with your system's architecture.
+  
+```bash
+# Download the binary for your system (from releases tab)
+wget https://github.com/Lissy93/who-dat/releases/download/v0.9/who-dat-v0.9-linux-amd64.tar.gz -O ./who-dat.tar.gz
+
+# Extract the compressed file
+tar -xzvf who-dat.tar.gz
+
+# Make it executable
+chmod +x who-dat
+
+# Run Who-Dat!
+./who-dat
+```
+
+</details>
+
+
 
 #### Option 4: Build from Source
 
@@ -136,6 +170,18 @@ npm run build
 Then run either `npx vercel dev`, or `go run main.go`
 
 Alternativley, build the Docker container with `docker build -t who-dat .`
+
+---
+
+## Contributing
+
+Contributions of any kind are welcome (and would be much appreciated!). Be sure to follow our [Code of Conduct](https://github.com/Lissy93/who-dat/blob/main/.github/CODE_OF_CONDUCT.md).<br>
+If you're new to open source, I've put together some guides in [Git-In](https://github.com/Lissy93/git-into-open-source/), but feel free to reach out if you need any support.
+
+Not a coder? You can still help, by raising bugs you find, updating docs, or consider sponsoring me on GitHub
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-Lissy93-EA4AAA?style=for-the-badge&logo=githubsponsors&labelColor=1b2744&link=https%3A%2F%2Fgithub.com%2Fsponsors%2FLissy93)](https://github.com/sponsors/Lissy93)
+
 
 ---
 
