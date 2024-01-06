@@ -18,16 +18,18 @@ jobs:
           - goarch: arm64
             goos: windows
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Node.js
+    - name: Checkout code 🛎️
+      uses: actions/checkout@v3
+    - name: Set up Node.js 💩
       uses: actions/setup-node@v2
       with:
         node-version: '16'
-    - name: Install npm dependencies
+    - name: Install npm dependencies 📥
       run: npm install
-    - name: Build frontend
+    - name: Build frontend 🔨
       run: npm run build
-    - uses: wangyoucao577/go-release-action@v1.29
+    - name: Compile Go binaries 🏗️
+      uses: wangyoucao577/go-release-action@v1.29
       with:
         github_token: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
