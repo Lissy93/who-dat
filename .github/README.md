@@ -8,14 +8,33 @@
 
 ---
 
+<details>
+  <summary>Contents</summary>
+  
+- [API Usage](#api-usage)
+  - [Base URL](#base-url)
+  - [Endpoints](#endpoints)
+    - [Single Domain](#single-domain-lookup-domain)
+    - [Bulk Domains](#multiple-domain-lookup-multi)
+- [Deployment](#deployment)
+  - [Option 1: Vercel](#option-1-vercel)
+  - [Option 2: Docker](#option-2-docker)
+  - [Option 3: Binary](#option-3-binary)
+  - [Option 4: Build from Source](#option-4-build-from-source)
+- [Development](#development)
+- [Contributing](#contributing)
+- [Mirror](#mirror)
+- [Credits](#credits)
+- [More Like This](#more-like-this)
+- [License](#license)
+
+</details>
+
 ## API Usage
 
 > **TL;DR** Get the WHOIS records for a site: `curl https://who-dat.as93.net/example.com`
 
 For detailed request + response schemas, and to try the API out, you can reference the [spec](https://who-dat.as93.net/docs.html)
-
-[![Who-Dat Swagger Docs](https://img.shields.io/badge/Swagger-Docs-85EA2D?style=for-the-badge&logo=swagger&labelColor=1b2744&link=https%3A%2F%2Fwho-dat.as93.net%2Fdocs.html)](https://who-dat.as93.net/docs.html)
-
 
 ### Base URL
 
@@ -93,6 +112,9 @@ curl "https://who-dat.as93.net/multi?domains=example.com,example.net"
 
 </details>
 
+[![Who-Dat Swagger Docs](https://img.shields.io/badge/Swagger-Docs-85EA2D?style=for-the-badge&logo=swagger&labelColor=1b2744&link=https%3A%2F%2Fwho-dat.as93.net%2Fdocs.html)](https://who-dat.as93.net/docs.html)
+
+
 ---
 
 ## Deployment
@@ -143,6 +165,8 @@ chmod +x who-dat
 ./who-dat
 ```
 
+(Or, if you're a Microsoft fanboy, you can just double-click the `who-dat.exe` after extracting in Windows Explorer)
+
 </details>
 
 
@@ -171,6 +195,11 @@ Then run either `npx vercel dev`, or `go run main.go`
 
 Alternativley, build the Docker container with `docker build -t who-dat .`
 
+[![Open in GitPod](https://img.shields.io/badge/GitPod-Try_Live-FFAE33?style=for-the-badge&logo=gitpod&labelColor=1b2744&link=https%3A%2F%2Fcodeberg.org%2Falicia%2Fwho-dat)](https://gitpod.io/#https://github.com/lissy93/who-dat)
+[![Open in VS Code](https://img.shields.io/badge/CodeSpaces-Try_Live-007ACC?style=for-the-badge&logo=visualstudiocode&labelColor=1b2744&link=https%3A%2F%2Fcodeberg.org%2Falicia%2Fwho-dat)](https://codespaces.new/Lissy93/who-dat)
+
+
+
 ---
 
 ## Contributing
@@ -181,6 +210,14 @@ If you're new to open source, I've put together some guides in [Git-In](https://
 Not a coder? You can still help, by raising bugs you find, updating docs, or consider sponsoring me on GitHub
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-Lissy93-EA4AAA?style=for-the-badge&logo=githubsponsors&labelColor=1b2744&link=https%3A%2F%2Fgithub.com%2Fsponsors%2FLissy93)](https://github.com/sponsors/Lissy93)
+
+---
+
+## Mirror
+
+We've got a (non-Microsoft) mirror of this repository hosted on CodeBerg, at [codeberg.org/alicia/who-dat](https://codeberg.org/alicia/who-dat)
+
+[![CodeBerg Mirror](https://img.shields.io/badge/Mirror-Who_Dat-2185D0?style=for-the-badge&logo=codeberg&labelColor=1b2744&link=https%3A%2F%2Fcodeberg.org%2Falicia%2Fwho-dat)](https://codeberg.org/alicia/who-dat)
 
 
 ---
@@ -358,6 +395,15 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
 
 ---
 
+## More Like This
+
+You might be interested in [Web-Check](https://github.com/Lissy93/web-check), an all-in-one tool for fetching info on a given domain name.
+
+If you like projects like these, consider [following me](https://github.com/Lissy93) on GitGub 😊<br>
+I'm often putting out new (free & open source) utilities, relating to security, privacy, OSINT, Linux and self-hosting.
+
+---
+
 ## License
 
 > _**[Lissy93/Who-Dat](https://github.com/Lissy93/who-dat)** is licensed under [MIT](https://github.com/Lissy93/who-dat/blob/HEAD/LICENSE) © [Alicia Sykes](https://aliciasykes.com) 2024._<br>
@@ -399,7 +445,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <sup>Thanks for visiting :)</sup>
 </p>
 
-###### Credits and References
+###### References
 
 <small><sub>➧ See [Credits](#credits)</sub></small>
 
