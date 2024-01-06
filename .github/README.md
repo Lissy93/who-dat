@@ -13,7 +13,7 @@
 
 > **TL;DR** Get the WHOIS records for a site: `curl https://who-dat.as93.net/example.com`
 
-For detailed request and response schemas, you can reference the [Who-Dat API Spec]()
+For detailed request + response schemas, and to try the API out, you can reference the [Swagger Docs](https://who-dat.as93.net/docs.html)
 
 ### Base URL
 
@@ -39,8 +39,31 @@ If you're self-hosting (reccomended) then replace this with your own base URL.
   - **Content**: `{ "error": "Domain not found" }`
 - **Sample Call**:
 
+##### Command Line
+
+```bash
+curl https://who-dat.as93.net/example.com
 ```
-curl https://your-api-url.com/example.com`
+
+##### JavaScript
+
+```javascript
+fetch('https://who-dat.as93.net/example.com')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+##### Python
+
+```python
+import requests
+
+response = requests.get('https://who-dat.as93.net/example.com')
+if response.status_code == 200:
+    print(response.json())
+else:
+    print("Error:", response.status_code)
 ```
 
 </details>
@@ -63,7 +86,7 @@ curl https://your-api-url.com/example.com`
 - **Sample Call**:
 
 ```
-curl "https://your-api-url.com/multi?domains=example.com,example.net"
+curl "https://who-dat.as93.net/multi?domains=example.com,example.net"
 ```
 
 </details>
@@ -80,13 +103,15 @@ Click the button below to deploy to Vercel 👇
 
 #### Option 2: Docker
 
+The Docker image is published to DockerHub ([hub.docker.com/r/lissy93/who-dat](https://hub.docker.com/r/lissy93/who-dat)), as well as GHCR
+
 ```shell
 docker run -p 8080:8080 lissy93/who-dat
 ```
 
 #### Option 3: Binary
 
-Head to the [Releases Tab](/releases), download the pre-built executable for your system, then run it.
+Head to the [Releases Tab](https://github.com/Lissy93/who-dat/releases), download the pre-built executable for your system, then run it.
 
 #### Option 4: Build from Source
 
@@ -116,9 +141,33 @@ Alternativley, build the Docker container with `docker build -t who-dat .`
 
 ## Credits
 
+##### Inspiration
+This project was inspired by [someshkar/whois-api](https://github.com/someshkar/whois-api) by [Somesh Kar](https://someshkar.com/).
+
+##### Tech Credits
+- The frontend is built with Alpine.js[^alpinejs], Vite[^vite], TS[^typescript] and SCSS[^scss] (plus the usual web tech stack).
+- The backend is written in Go[^golang], and was made possible thanks to [json-iterator/go](https://github.com/json-iterator/go) and [likexian/whois-parser](https://github.com/likexian/whois-parser)
+- Demo deployed to Vercel[^vercel] (but also available on DockerHub[^dockerhub]), and source of course on GitHub[^github] and CodeBerg[^codeberg].
+
+[^alpinejs]: [Alpine.js](https://alpinejs.dev/) - A rugged, minimal framework for composing JavaScript behavior in your markup.
+[^vite]: [Vite](https://vitejs.dev/) - A build tool that aims to provide a faster and leaner development experience for modern web projects.
+[^typescript]: [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
+[^scss]: [SCSS](https://sass-lang.com/) - A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+[^golang]: [Go Lang](https://golang.org/) - An open source programming language that makes it easy to build simple, reliable, and efficient software.
+[^github]: [GitHub](https://github.com/) - A platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+[^codeberg]: [Codeberg](https://codeberg.org/) - A free and open-source forge for collaborative software development.
+[^vercel]: [Vercel](https://vercel.com/) - Static hosting and shit
+[^dockerhub]: [DockerHub](https://hub.docker.com/) - Container registry hosting and shit
+
 ##### Contributors
 
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
 ##### Sponsors
+
+<!-- readme: sponsors -start -->
+<!-- readme: sponsors -end -->
 
 ---
 
@@ -162,6 +211,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <a href="https://github.com/lissy93"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
   <sup>Thanks for visiting :)</sup>
 </p>
+
+###### Credits and References
+
+<small><sub>➧ See [Credits](#credits)</sub></small>
 
 <!-- Dinosaurs are Awesome -->
 <!-- 
