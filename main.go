@@ -28,6 +28,11 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		path := strings.TrimPrefix(r.URL.Path, "/")
 
+		if path == "docs" {
+			http.ServeFile(w, r, "dist/docs.html")
+			return
+		}
+
 		// Serve embedded static files for the root
 		if path == "" {
 			embeddedServer.ServeHTTP(w, r)
