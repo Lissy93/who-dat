@@ -1,0 +1,159 @@
+openapi: 3.0.0
+info:
+  title: Who Dat?
+  description: Whois lookup service, to fetch owner records for any domain
+  version: 1.0.0
+
+servers:
+  - url: 'https://who-dat.as93.net/'
+
+paths:
+  /{domain}:
+    get:
+      summary: Single Domain WHOIS Lookup
+      description: Retrieve WHOIS information for a single domain.
+      parameters:
+        - name: domain
+          in: path
+          required: true
+          description: The domain to lookup.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: WHOIS data for the specified domain.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WhoisInfo'
+        '400':
+          description: Bad request, e.g., domain not specified.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '404':
+          description: Domain not found.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /multi:
+    get:
+      summary: Multiple Domain WHOIS Lookup
+      description: Retrieve WHOIS information for multiple domains.
+      parameters:
+        - name: domains
+          in: query
+          required: true
+          description: Comma-separated list of domains to lookup.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of WHOIS data for the specified domains.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WhoisInfo'
+        '400':
+          description: Bad request, e.g., no domains specified.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+components:
+  schemas:
+    WhoisInfo:
+      type: object
+      properties:
+        domain:
+          type: object
+          properties:
+            id:
+              type: string
+            domain:
+              type: string
+            name:
+              type: string
+            extension:
+              type: string
+            whois_server:
+              type: string
+            status:
+              type: array
+              items:
+                type: string
+            name_servers:
+              type: array
+              items:
+                type: string
+            created_date:
+              type: string
+              format: date-time
+            updated_date:
+              type: string
+              format: date-time
+            expiration_date:
+              type: string
+              format: date-time
+        registrar:
+          $ref: '#/components/schemas/ContactInfo'
+        registrant:
+          $ref: '#/components/schemas/ContactInfo'
+        administrative:
+          $ref: '#/components/schemas/ContactInfo'
+        technical:
+          $ref: '#/components/schemas/ContactInfo'
+        billing:
+          $ref: '#/components/schemas/ContactInfo'
+
+    ContactInfo:
+      type: object
+      properties:
+        name:
+          type: string
+        organization:
+          type: string
+        street:
+          type: string
+        city:
+          type: string
+        province:
+          type: string
+        postal_code:
+          type: string
+        country:
+          type: string
+        phone:
+          type: string
+        phone_ext:
+          type: string
+        fax:
+          type: string
+        fax_ext:
+          type: string
+        email:
+          type: string
