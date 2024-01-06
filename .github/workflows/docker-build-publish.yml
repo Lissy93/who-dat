@@ -1,0 +1,79 @@
+name: 🐳 Build + Publish Multi-Platform Image
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ['main']
+    tags: ['*']
+    paths:
+      - '**.go'
+      - 'api/**'
+      - 'src/**'
+      - 'package.json'
+      - '**.html'
+
+env:
+  DH_IMAGE: lissy93/who-dat
+  GH_IMAGE: ${{ github.repository_owner }}/${{ github.event.repository.name }}
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    permissions: { contents: read, packages: write }
+    if: "!contains(github.event.head_commit.message, '[ci-skip]')"
+
+    steps:
+    - name: 🛎️ Checkout Repo
+      uses: actions/checkout@v2
+
+    - name: 🗂️ Make Docker Meta
+      id: meta
+      uses: docker/metadata-action@v3
+      with:
+        images: |
+          ${{ env.DH_IMAGE }}
+          ghcr.io/${{ env.GH_IMAGE }}
+        tags: |
+          type=raw,value=latest,enable={{is_default_branch}}
+          type=ref,event=branch
+          type=ref,event=tag
+        labels: |
+          maintainer=Lissy93
+          org.opencontainers.image.title=Who-Dat
+          org.opencontainers.image.description=Free and Open Source WHOIS Service
+          org.opencontainers.image.documentation=https://who-dat.as93.net
+          org.opencontainers.image.authors=Alicia Sykes
+          org.opencontainers.image.licenses=MIT
+
+    - name: 🔧 Set up QEMU
+      uses: docker/setup-qemu-action@v1
+
+    - name: 🔧 Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: 🔑 Login to DockerHub
+      uses: docker/login-action@v1 
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: 🔑 Login to GitHub Container Registry
+      uses: docker/login-action@v1 
+      with:
+        registry: ghcr.io
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 🚦 Check Registry Status
+      uses: crazy-max/ghaction-docker-status@v1
+
+    - name: ⚒️ Build and push
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: ./Dockerfile
+        platforms: linux/amd64,linux/arm64,linux/arm/v7
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        push: true
+          
