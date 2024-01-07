@@ -40,7 +40,7 @@ For detailed request + response schemas, and to try the API out, you can referen
 
 The base URL for the public API is [`who-dat.as93.net`](https://who-dat.as93.net)
 
-If you're self-hosting (reccomended) then replace this with your own base URL.
+If you're self-hosting (recommended) then replace this with your own base URL.
 
 ### Endpoints
 
@@ -123,7 +123,7 @@ curl "https://who-dat.as93.net/multi?domains=example.com,example.net"
 
 This is the quickest and easiest way to get up-and-running. Simply fork the repository, then login to Vercel (using GitHub), and after importing your fork, it will be deployed! There's no additional config or keys needed, and it should work just fine on the free plan.
 
-Alternativley, just hit the button below for 1-click deploy 👇
+Alternatively, just hit the button below for 1-click deploy 👇
 
 [![1-Click Deploy to Vercel](https://img.shields.io/badge/Deploy-Vercel-ffffff?style=for-the-badge&logo=vercel&labelColor=1b2744&link=https%3A%2F%2Fwho-dat.as93.net%2Fdocs.html)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flissy93%2Fwho-dat&demo-title=Who-Dat%20Demo&demo-url=https%3A%2F%2Fwho-dat.as93.net&demo-image=https%3A%2F%2Fi.ibb.co%2FJ5r1zCP%2Fwho-dat-square.png)
 
