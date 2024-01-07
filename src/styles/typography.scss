@@ -18,6 +18,10 @@ h1 {
   padding: 0 1rem;
   font-size: 6rem;
   transform: rotate(-6deg);
+  transition: all 0.25s ease-in-out;
+  @media (max-width: 600px) {
+    font-size: 4rem;
+  }
 }
 
 h2 {

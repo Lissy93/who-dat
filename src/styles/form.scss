@@ -2,6 +2,7 @@ form {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 input {
@@ -17,6 +18,7 @@ input {
   width: 100%;
   flex: 1;
   border: 2px solid transparent;
+  min-width: 300px;
   &:focus,
   &:focus-visible {
     border: 2px solid var(--accent);
