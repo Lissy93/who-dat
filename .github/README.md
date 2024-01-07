@@ -260,6 +260,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <br />
             <sub><b>Alicia Bot</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/phill-holland">
+            <img src="https://avatars.githubusercontent.com/u/32714574?v=4" width="80;" alt="phill-holland"/>
+            <br />
+            <sub><b>Phill Holland</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
