@@ -40,7 +40,7 @@
       </div>
       <nav>
         <a href="/docs.html">Public API</a>
-        <a href="#">Self-Hosting</a>
+        <a href="https://github.com/Lissy93/who-dat#deployment">Self-Hosting</a>
         <a href="https://github.com/Lissy93/who-dat">GitHub</a>
       </nav>
     </header>
@@ -53,8 +53,34 @@
         <button type="submit">Lookup</button>
       </form>
       <div x-show="result">
-        <h3>Result:</h3>
-        <pre x-text="result"></pre>
+        <h3>Results</h3>
+        <button class="small toggle" @click="toggleFormat" x-text="showFormatted ? 'Show Raw' : 'Show Formatted'"></button>
+          <div x-show="showFormatted && formattedResult">
+            <template x-for="section in (formattedResult || [])" class="result-section">
+              <div>
+              <h4 x-text="section.lbl"></h4>
+              <ul class="row">
+                <template x-for="item in section.val">
+                  <li>
+                    <span class="row-lbl" x-text="item.lbl"></span>
+                    <template x-if="Array.isArray(item.val)">
+                      <span class="row-val row-val-list">
+                        <template x-for="subItem in item.val">
+                          <span class="sub-item" x-text="subItem"></span>
+                        </template>
+                      </span>
+                      <span class="row-val row-val-list" x-text="item.val.join(', ')"></span>
+                    </template>
+                    <template x-if="!Array.isArray(item.val)">
+                      <span class="row-val" x-text="item.val"></span>
+                    </template>
+                  </li>
+                </template>
+              </ul>
+            </div>
+            </template>
+          </div>
+          <pre x-show="!showFormatted" x-text="result"></pre>
       </div>
       <div x-show="error" style="color: red;">
         <p x-text="error"></p>
@@ -70,7 +96,7 @@
       </p>
       <code>curl https://who-dat.as93.net/example.com</code>
       <p>
-        <a href="#">View API Documentation</a>
+        <a href="https://github.com/Lissy93/who-dat#api-usage">View API Documentation</a>
       </p>
     </section>
 
@@ -85,7 +111,7 @@
       <p>Or</p>
       <a><button class="small">1-Click Deploy to Vercel</button></a>
       <p>
-        <a href="#">View Self-Hosting Documentation</a>
+        <a href="https://github.com/Lissy93/who-dat#deployment">View Self-Hosting Documentation</a>
       </p>
     </section>
 

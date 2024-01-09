@@ -1,0 +1,27 @@
+
+.row {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  li {
+    display: flex;
+    justify-content: space-between;
+    .row-lbl {
+      text-transform: capitalize;
+    }
+    .row-val {
+      .sub-item {
+        display: flex;
+      }
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--midground);
+    }
+  }
+}
+
+.toggle {
+  float: right;
+}
