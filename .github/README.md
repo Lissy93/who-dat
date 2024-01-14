@@ -3,6 +3,8 @@
 <img src="https://i.ibb.co/J5r1zCP/who-dat-square.png" width="128" /><br />
 <i>Free & Open Source WHOIS Lookup Service</i>
 <br />
+<i>No-CORS, no auth API that's publicly available or easily self-hostable</i>
+<br />
 <b>🌐 <a href="https://who-dat.as93.net/">who-dat.as93.net</a></b><br />
 </p>
 
@@ -23,6 +25,7 @@
   - [Option 4: Build from Source](#option-4-build-from-source)
 - [Development](#development)
 - [Contributing](#contributing)
+- [Web Interface](#web-interface)
 - [Mirror](#mirror)
 - [Credits](#credits)
 - [More Like This](#more-like-this)
@@ -198,7 +201,16 @@ Alternativley, build the Docker container with `docker build -t who-dat .`
 [![Open in GitPod](https://img.shields.io/badge/GitPod-Try_Live-FFAE33?style=for-the-badge&logo=gitpod&labelColor=1b2744&link=https%3A%2F%2Fcodeberg.org%2Falicia%2Fwho-dat)](https://gitpod.io/#https://github.com/lissy93/who-dat)
 [![Open in VS Code](https://img.shields.io/badge/CodeSpaces-Try_Live-007ACC?style=for-the-badge&logo=visualstudiocode&labelColor=1b2744&link=https%3A%2F%2Fcodeberg.org%2Falicia%2Fwho-dat)](https://codespaces.new/Lissy93/who-dat)
 
+---
 
+## Web Interface
+
+There's a very simple frontend included in the app. This is built with Alpine.js, so is super light-weight, and only adds about 100kb to the total executable.
+The web interface is used to view WHOIS records for a given domain, and also hosts the API documentation.
+
+<p align="center">
+<img width="600" src="https://i.ibb.co/1dYcdZC/who-dat-screenshot.png" />
+</p>
 
 ---
 
