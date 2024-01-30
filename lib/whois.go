@@ -1,8 +1,8 @@
 package lib
 
 import (
-	"github.com/likexian/whois-go"
-	whoisparser "github.com/likexian/whois-parser-go"
+	"github.com/likexian/whois"
+	whoisparser "github.com/likexian/whois-parser"
 )
 
 // GetWhois does a WHOIS lookup for a supplied domain
