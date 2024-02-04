@@ -279,6 +279,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <br />
             <sub><b>Phill Holland</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/SamLS98">
+            <img src="https://avatars.githubusercontent.com/u/63964062?v=4" width="80;" alt="SamLS98"/>
+            <br />
+            <sub><b>Sammy LS</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
@@ -403,20 +410,12 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/CrazyWolf13">
-            <img src="https://avatars.githubusercontent.com/u/96661824?v=4" width="80;" alt="CrazyWolf13"/>
-            <br />
-            <sub><b>Tobias</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Glydeon">
             <img src="https://avatars.githubusercontent.com/u/121807526?u=c4177e73394d90ad76a9a0282143f3a204af0f60&v=4" width="80;" alt="Glydeon"/>
             <br />
             <sub><b>Byron</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/NixyJuppie">
             <img src="https://avatars.githubusercontent.com/u/138570196?u=b102c222487905728b858704962d32759df29ebe&v=4" width="80;" alt="NixyJuppie"/>
