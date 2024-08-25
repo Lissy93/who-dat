@@ -260,17 +260,17 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/Lissy93">
-            <img src="https://avatars.githubusercontent.com/u/1862727?v=4" width="80;" alt="Lissy93"/>
-            <br />
-            <sub><b>Alicia Sykes</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/liss-bot">
             <img src="https://avatars.githubusercontent.com/u/87835202?v=4" width="80;" alt="liss-bot"/>
             <br />
             <sub><b>Alicia Bot</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Lissy93">
+            <img src="https://avatars.githubusercontent.com/u/1862727?v=4" width="80;" alt="Lissy93"/>
+            <br />
+            <sub><b>Alicia Sykes</b></sub>
         </a>
     </td>
     <td align="center">
@@ -296,8 +296,8 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/koconder">
-            <img src="https://avatars.githubusercontent.com/u/25068?u=582657b23622aaa3dfe68bd028a780f272f456fa&v=4" width="80;" alt="koconder"/>
+        <a href="https://github.com/vincentkoc">
+            <img src="https://avatars.githubusercontent.com/u/25068?v=4" width="80;" alt="vincentkoc"/>
             <br />
             <sub><b>Vincent Koc</b></sub>
         </a>
@@ -449,7 +449,7 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         <a href="https://github.com/st617">
             <img src="https://avatars.githubusercontent.com/u/128325650?v=4" width="80;" alt="st617"/>
             <br />
-            <sub><b>st617</b></sub>
+            <sub><b>St617</b></sub>
         </a>
     </td>
     <td align="center">
