@@ -10,6 +10,7 @@ import (
 	"strings"
 
 	"github.com/lissy93/who-dat/api"
+	"github.com/lissy93/who-dat/lib"
 )
 
 //go:embed dist/*
@@ -45,12 +46,11 @@ func main() {
 			return
 		}
 
-		// Handle API requests
-		// Check if it's a domain lookup or a multi-domain lookup
+		// Wrap API handlers with auth middleware
 		if path == "multi" {
-			api.MultiHandler(w, r)
+			lib.AuthMiddleware(api.MultiHandler).ServeHTTP(w, r)
 		} else {
-			api.MainHandler(w, r)
+			lib.AuthMiddleware(api.MainHandler).ServeHTTP(w, r)
 		}
 	})
 
