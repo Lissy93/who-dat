@@ -23,6 +23,7 @@
   - [Option 2: Docker](#option-2-docker)
   - [Option 3: Binary](#option-3-binary)
   - [Option 4: Build from Source](#option-4-build-from-source)
+- [Adding Auth](#authentication)
 - [Development](#development)
 - [Contributing](#contributing)
 - [Web Interface](#web-interface)
@@ -179,6 +180,28 @@ chmod +x who-dat
 Follow the setup instructions in the [Development](#development) section.<br>
 Then run `go build -a -installsuffix cgo -o who-dat .` to generate the binary for your system.<br>
 You'll then be able to execute the newly built `./who-dat` file directly to start the application.
+
+---
+
+## Authentication
+
+Authentication is optional, and can be enabled by setting the `AUTH_KEY` environment variable.
+
+When authentication is enabled, all API requests must include the key in the Authorization header, using one of the formats indicated below.
+
+#### Raw API Key
+
+```
+curl -H "Authorization: your-secret-key" https://who-dat.yourdomain.com/example.com
+```
+
+#### Bearer Token Format
+
+```
+curl -H "Authorization: Bearer your-secret-key" https://who-dat.yourdomain.com/example.com
+```
+
+If authentication is not configured (no `AUTH_KEY` set), the API will remain publicly accessible.
 
 ---
 
