@@ -3,6 +3,7 @@ package api
 import (
 	"fmt"
 	"net/http"
+	"os"
 	"strings"
 
 	jsoniter "github.com/json-iterator/go"
@@ -16,6 +17,26 @@ func MainHandler(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		fmt.Fprintf(w, "Please use a GET request")
 		return
+	}
+
+	// Check authentication if AUTH_KEY is set
+	authKey := os.Getenv("AUTH_KEY")
+	if authKey != "" {
+		providedKey := r.Header.Get("Authorization")
+		if providedKey == "" {
+			http.Error(w, "API key required. See: github.com/lissy93/who-dat", http.StatusForbidden)
+			return
+		}
+
+		// Remove "Bearer " prefix if present
+		if len(providedKey) > 7 && providedKey[:7] == "Bearer " {
+			providedKey = providedKey[7:]
+		}
+
+		if providedKey != authKey {
+			http.Error(w, "Invalid API key. See: github.com/lissy93/who-dat", http.StatusForbidden)
+			return
+		}
 	}
 
 	// Extract domain from URL path
