@@ -304,6 +304,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/cedwardsmedia">
+            <img src="https://avatars.githubusercontent.com/u/1514767?v=4" width="80;" alt="cedwardsmedia"/>
+            <br />
+            <sub><b>Corey Edwards</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/phill-holland">
             <img src="https://avatars.githubusercontent.com/u/32714574?v=4" width="80;" alt="phill-holland"/>
             <br />
