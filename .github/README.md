@@ -472,7 +472,7 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         <a href="https://github.com/rpvu">
             <img src="https://avatars.githubusercontent.com/u/90328029?v=4" width="80;" alt="rpvu"/>
             <br />
-            <sub><b>rpvu</b></sub>
+            <sub><b>Rpvu</b></sub>
         </a>
     </td>
     <td align="center">
