@@ -297,10 +297,10 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/SamLS98">
-            <img src="https://avatars.githubusercontent.com/u/63964062?v=4" width="80;" alt="SamLS98"/>
+        <a href="https://github.com/SamLS42">
+            <img src="https://avatars.githubusercontent.com/u/63964062?v=4" width="80;" alt="SamLS42"/>
             <br />
-            <sub><b>Sammy LS</b></sub>
+            <sub><b>Sammy Lastre Silveira</b></sub>
         </a>
     </td>
     <td align="center">
