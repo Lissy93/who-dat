@@ -462,13 +462,6 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/phishdestroy">
-            <img src="https://avatars.githubusercontent.com/u/208413058?u=d2a7f07fdebe6bdbde4b3141ca3ab958fbf0bae9&v=4" width="80;" alt="phishdestroy"/>
-            <br />
-            <sub><b>PhishDestroy</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Quad4-Software">
             <img src="https://avatars.githubusercontent.com/u/219317474?v=4" width="80;" alt="Quad4-Software"/>
             <br />
