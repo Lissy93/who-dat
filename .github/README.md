@@ -340,13 +340,6 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/BrianCurliss">
-            <img src="https://avatars.githubusercontent.com/u/1222949?v=4" width="80;" alt="BrianCurliss"/>
-            <br />
-            <sub><b>Brian Curliss</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/AnandChowdhary">
             <img src="https://avatars.githubusercontent.com/u/2841780?u=747e554b3a7f12eb20b7910e1c87d817844f714f&v=4" width="80;" alt="AnandChowdhary"/>
             <br />
@@ -366,15 +359,15 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <br />
             <sub><b>Ulises Gascón</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/InDieTasten">
             <img src="https://avatars.githubusercontent.com/u/7047377?u=8d8f8017628b38bc46dcbf3620e194b01d3fb2d1&v=4" width="80;" alt="InDieTasten"/>
             <br />
             <sub><b>InDieTasten</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/araguaci">
             <img src="https://avatars.githubusercontent.com/u/7318668?v=4" width="80;" alt="araguaci"/>
@@ -408,6 +401,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <img src="https://avatars.githubusercontent.com/u/24632172?u=0d20f2d615158f87cd60a3398d3efb026c32f291&v=4" width="80;" alt="mryesiller"/>
             <br />
             <sub><b>Göksel Yeşiller</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/meroxdotdev">
+            <img src="https://avatars.githubusercontent.com/u/35839230?v=4" width="80;" alt="meroxdotdev"/>
+            <br />
+            <sub><b>Melcher Robert</b></sub>
         </a>
     </td></tr>
 <tr>
@@ -459,13 +459,6 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <img src="https://avatars.githubusercontent.com/u/173822055?u=4d323807f120b34da9b156bfd168b46a22844764&v=4" width="80;" alt="gl0bal01"/>
             <br />
             <sub><b>Gl0bal01 💖 龴ↀ◡ↀ龴</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Quad4-Software">
-            <img src="https://avatars.githubusercontent.com/u/219317474?v=4" width="80;" alt="Quad4-Software"/>
-            <br />
-            <sub><b>Quad4 Software</b></sub>
         </a>
     </td></tr>
 </table>
