@@ -447,13 +447,20 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Fovvy">
+            <img src="https://avatars.githubusercontent.com/u/136544445?v=4" width="80;" alt="Fovvy"/>
+            <br />
+            <sub><b>~</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/hudsonrock-partnerships">
             <img src="https://avatars.githubusercontent.com/u/163282900?u=5f2667f7fe5d284ac7a2da6b0800ea8970b0fcbf&v=4" width="80;" alt="hudsonrock-partnerships"/>
             <br />
             <sub><b>Hudsonrock-partnerships</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/LambdaTest-Inc">
             <img src="https://avatars.githubusercontent.com/u/171592363?u=96606606a45fa170427206199014f2a5a2a4920b&v=4" width="80;" alt="LambdaTest-Inc"/>
