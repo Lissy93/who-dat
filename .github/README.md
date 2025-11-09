@@ -361,20 +361,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/martin68">
-            <img src="https://avatars.githubusercontent.com/u/6174552?v=4" width="80;" alt="martin68"/>
-            <br />
-            <sub><b>Martin68</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
         <a href="https://github.com/InDieTasten">
             <img src="https://avatars.githubusercontent.com/u/7047377?u=8d8f8017628b38bc46dcbf3620e194b01d3fb2d1&v=4" width="80;" alt="InDieTasten"/>
             <br />
             <sub><b>InDieTasten</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/araguaci">
             <img src="https://avatars.githubusercontent.com/u/7318668?v=4" width="80;" alt="araguaci"/>
@@ -409,15 +402,15 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <br />
             <sub><b>Paxton Phillips</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/getumbrel">
             <img src="https://avatars.githubusercontent.com/u/59408891?v=4" width="80;" alt="getumbrel"/>
             <br />
             <sub><b>Umbrel</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/OlliVHH">
             <img src="https://avatars.githubusercontent.com/u/84959562?v=4" width="80;" alt="OlliVHH"/>
@@ -448,19 +441,19 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
     </td>
     <td align="center">
         <a href="https://github.com/Fovvy">
-            <img src="https://avatars.githubusercontent.com/u/136544445?v=4" width="80;" alt="Fovvy"/>
+            <img src="https://avatars.githubusercontent.com/u/136544445?u=94c261740c5f7a0702b4537aa184a45b5aca7909&v=4" width="80;" alt="Fovvy"/>
             <br />
             <sub><b>~</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/hudsonrock-partnerships">
             <img src="https://avatars.githubusercontent.com/u/163282900?u=5f2667f7fe5d284ac7a2da6b0800ea8970b0fcbf&v=4" width="80;" alt="hudsonrock-partnerships"/>
             <br />
             <sub><b>Hudsonrock-partnerships</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/LambdaTest-Inc">
             <img src="https://avatars.githubusercontent.com/u/171592363?u=96606606a45fa170427206199014f2a5a2a4920b&v=4" width="80;" alt="LambdaTest-Inc"/>
@@ -480,6 +473,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <img src="https://avatars.githubusercontent.com/u/217485921?v=4" width="80;" alt="mazzeroo"/>
             <br />
             <sub><b>Maria</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Quad4-Software">
+            <img src="https://avatars.githubusercontent.com/u/219317474?v=4" width="80;" alt="Quad4-Software"/>
+            <br />
+            <sub><b>Quad4 Software</b></sub>
         </a>
     </td></tr>
 </table>
