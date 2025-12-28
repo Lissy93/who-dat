@@ -440,6 +440,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/JDB321Sailor">
+            <img src="https://avatars.githubusercontent.com/u/212125521?v=4" width="80;" alt="JDB321Sailor"/>
+            <br />
+            <sub><b>JDB321Sailor</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Quad4-Software">
             <img src="https://avatars.githubusercontent.com/u/219317474?v=4" width="80;" alt="Quad4-Software"/>
             <br />
