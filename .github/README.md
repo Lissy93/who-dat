@@ -470,7 +470,7 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
     </td>
     <td align="center">
         <a href="https://github.com/UhOhSpaghettiCode">
-            <img src="https://avatars.githubusercontent.com/u/247676402?v=4" width="80;" alt="UhOhSpaghettiCode"/>
+            <img src="https://avatars.githubusercontent.com/u/247676402?u=4372f627824b46844d0e4274d7e06eed28ed66a8&v=4" width="80;" alt="UhOhSpaghettiCode"/>
             <br />
             <sub><b>No Thanks</b></sub>
         </a>
