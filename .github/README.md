@@ -383,13 +383,6 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Zero-Tail">
-            <img src="https://avatars.githubusercontent.com/u/16860155?u=a31a29cc10aba4a336552ecd87914861a2e06e22&v=4" width="80;" alt="Zero-Tail"/>
-            <br />
-            <sub><b>ZeroTail</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/getumbrel">
             <img src="https://avatars.githubusercontent.com/u/59408891?v=4" width="80;" alt="getumbrel"/>
             <br />
@@ -409,15 +402,15 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <br />
             <sub><b>Frankdez93</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/BigoudOps">
             <img src="https://avatars.githubusercontent.com/u/101472804?u=5e4948110e48320024f212edf5ae2332b63fc391&v=4" width="80;" alt="BigoudOps"/>
             <br />
             <sub><b>John BigoudOps</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/terminaltrove">
             <img src="https://avatars.githubusercontent.com/u/121595180?v=4" width="80;" alt="terminaltrove"/>
@@ -448,19 +441,19 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
     </td>
     <td align="center">
         <a href="https://github.com/gl0bal01">
-            <img src="https://avatars.githubusercontent.com/u/173822055?u=4d323807f120b34da9b156bfd168b46a22844764&v=4" width="80;" alt="gl0bal01"/>
+            <img src="https://avatars.githubusercontent.com/u/173822055?u=6979dcc4773b1adfe6011019b9df3da6c9fc4534&v=4" width="80;" alt="gl0bal01"/>
             <br />
             <sub><b>Gl0bal01 💖 龴ↀ◡ↀ龴</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Envisage-Cloud-Solutions">
             <img src="https://avatars.githubusercontent.com/u/219464178?v=4" width="80;" alt="Envisage-Cloud-Solutions"/>
             <br />
             <sub><b>Envisage Cloud Solutions</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/clj00321">
             <img src="https://avatars.githubusercontent.com/u/243985327?u=e42e7121ebab0a1a2938d7dd8127b6d3f7bfda8c&v=4" width="80;" alt="clj00321"/>
@@ -470,7 +463,7 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
     </td>
     <td align="center">
         <a href="https://github.com/UhOhSpaghettiCode">
-            <img src="https://avatars.githubusercontent.com/u/247676402?u=4372f627824b46844d0e4274d7e06eed28ed66a8&v=4" width="80;" alt="UhOhSpaghettiCode"/>
+            <img src="https://avatars.githubusercontent.com/u/247676402?u=5f72d4663b2cfa48035f68ca449330fbc37878d8&v=4" width="80;" alt="UhOhSpaghettiCode"/>
             <br />
             <sub><b>No Thanks</b></sub>
         </a>
