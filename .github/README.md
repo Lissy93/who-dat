@@ -369,13 +369,6 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/elvito">
-            <img src="https://avatars.githubusercontent.com/u/9715912?v=4" width="80;" alt="elvito"/>
-            <br />
-            <sub><b>Elvito</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/vlad-tim">
             <img src="https://avatars.githubusercontent.com/u/11474041?u=eee43705b54d2ec9f51fc4fcce5ad18dd17c87e4&v=4" width="80;" alt="vlad-tim"/>
             <br />
@@ -409,15 +402,15 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
             <br />
             <sub><b>SSD Nodes</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/frankdez93">
             <img src="https://avatars.githubusercontent.com/u/87549420?v=4" width="80;" alt="frankdez93"/>
             <br />
             <sub><b>Frankdez93</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/BigoudOps">
             <img src="https://avatars.githubusercontent.com/u/101472804?u=5e4948110e48320024f212edf5ae2332b63fc391&v=4" width="80;" alt="BigoudOps"/>
@@ -433,6 +426,13 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/MichaelPerron">
+            <img src="https://avatars.githubusercontent.com/u/130603904?v=4" width="80;" alt="MichaelPerron"/>
+            <br />
+            <sub><b>Michael Perron</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/hudsonrock-partnerships">
             <img src="https://avatars.githubusercontent.com/u/163282900?u=5f2667f7fe5d284ac7a2da6b0800ea8970b0fcbf&v=4" width="80;" alt="hudsonrock-partnerships"/>
             <br />
@@ -441,7 +441,7 @@ This project was inspired by [someshkar/whois-api](https://github.com/someshkar/
     </td>
     <td align="center">
         <a href="https://github.com/crmzx8">
-            <img src="https://avatars.githubusercontent.com/u/170860426?v=4" width="80;" alt="crmzx8"/>
+            <img src="https://avatars.githubusercontent.com/u/170860426?u=43694046c9b5a99a3014369b22cc48815b07b457&v=4" width="80;" alt="crmzx8"/>
             <br />
             <sub><b>CRMX8</b></sub>
         </a>
