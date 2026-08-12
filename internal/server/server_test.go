@@ -258,11 +258,19 @@ func TestMultiCacheHeader(t *testing.T) {
 	}
 }
 
-func TestBareLookupRejectsPost(t *testing.T) {
+func TestBareLookupMethods(t *testing.T) {
+	h := newTestServer(registered(), nil)
+
 	rec := httptest.NewRecorder()
-	newTestServer(registered(), nil).ServeHTTP(rec, httptest.NewRequest(http.MethodPost, "/example.com", nil))
-	if rec.Code != http.StatusMethodNotAllowed {
-		t.Fatalf("status = %d, want %d", rec.Code, http.StatusMethodNotAllowed)
+	h.ServeHTTP(rec, httptest.NewRequest(http.MethodPost, "/example.com", nil))
+	if rec.Code != http.StatusMethodNotAllowed || rec.Header().Get("Allow") != "GET, HEAD" {
+		t.Fatalf("POST status/allow = %d/%q, want 405/%q", rec.Code, rec.Header().Get("Allow"), "GET, HEAD")
+	}
+
+	rec = httptest.NewRecorder()
+	h.ServeHTTP(rec, httptest.NewRequest(http.MethodHead, "/example.com", nil))
+	if rec.Code != http.StatusOK {
+		t.Fatalf("HEAD status = %d, want 200", rec.Code)
 	}
 }
 
