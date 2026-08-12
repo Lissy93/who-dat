@@ -45,6 +45,7 @@ paths:
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Result" }
+        "405": { $ref: "#/components/responses/Error" }
   /multi:
     get:
       summary: Look up multiple domains

@@ -13,12 +13,13 @@ import (
 
 // Error codes returned in the error envelope.
 const (
-	codeInvalidDomain  = "INVALID_DOMAIN"
-	codeUnsupportedTLD = "UNSUPPORTED_TLD"
-	codeRateLimited    = "RATE_LIMITED"
-	codeUpstreamError  = "UPSTREAM_ERROR"
-	codeUpstreamTimout = "UPSTREAM_TIMEOUT"
-	codeInternal       = "INTERNAL_ERROR"
+	codeInvalidDomain    = "INVALID_DOMAIN"
+	codeUnsupportedTLD   = "UNSUPPORTED_TLD"
+	codeRateLimited      = "RATE_LIMITED"
+	codeMethodNotAllowed = "METHOD_NOT_ALLOWED"
+	codeUpstreamError    = "UPSTREAM_ERROR"
+	codeUpstreamTimout   = "UPSTREAM_TIMEOUT"
+	codeInternal         = "INTERNAL_ERROR"
 )
 
 type errorBody struct {
