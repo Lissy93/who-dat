@@ -124,6 +124,11 @@ func (s *server) handleRoot(w http.ResponseWriter, r *http.Request) {
 		s.files.ServeHTTP(w, r)
 		return
 	}
+	if r.Method != http.MethodGet && r.Method != http.MethodHead {
+		w.Header().Set("Allow", "GET, HEAD, OPTIONS")
+		writeError(w, http.StatusMethodNotAllowed, codeMethodNotAllowed, "method not allowed", "")
+		return
+	}
 	s.lookupAPI.ServeHTTP(w, r)
 }
 
