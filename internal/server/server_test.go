@@ -278,6 +278,30 @@ func TestBareLookupMethods(t *testing.T) {
 	}
 }
 
+func TestPreflightAllowsAuthHeaders(t *testing.T) {
+	r := httptest.NewRequest(http.MethodOptions, "/example.com", nil)
+	r.Header.Set("Origin", "https://app.example")
+	r.Header.Set("Access-Control-Request-Method", "GET")
+	r.Header.Set("Access-Control-Request-Headers", "x-api-key")
+	rec := httptest.NewRecorder()
+	newTestServer(registered(), nil).ServeHTTP(rec, r)
+
+	if rec.Code != http.StatusNoContent {
+		t.Fatalf("preflight status = %d, want 204", rec.Code)
+	}
+	// Every header tokenFrom reads must survive preflight, or browsers can't send it.
+	header := rec.Header().Get("Access-Control-Allow-Headers")
+	allowed := map[string]bool{}
+	for _, h := range strings.Split(header, ",") {
+		allowed[strings.ToLower(strings.TrimSpace(h))] = true
+	}
+	for _, want := range []string{"authorization", "x-api-key"} {
+		if !allowed[want] {
+			t.Errorf("Access-Control-Allow-Headers = %q, want it to include %s", header, want)
+		}
+	}
+}
+
 func TestHealth(t *testing.T) {
 	rec := httptest.NewRecorder()
 	newTestServer(nil, nil).ServeHTTP(rec, httptest.NewRequest(http.MethodGet, "/health", nil))
