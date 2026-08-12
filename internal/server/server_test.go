@@ -258,6 +258,14 @@ func TestMultiCacheHeader(t *testing.T) {
 	}
 }
 
+func TestBareLookupRejectsPost(t *testing.T) {
+	rec := httptest.NewRecorder()
+	newTestServer(registered(), nil).ServeHTTP(rec, httptest.NewRequest(http.MethodPost, "/example.com", nil))
+	if rec.Code != http.StatusMethodNotAllowed {
+		t.Fatalf("status = %d, want %d", rec.Code, http.StatusMethodNotAllowed)
+	}
+}
+
 func TestHealth(t *testing.T) {
 	rec := httptest.NewRecorder()
 	newTestServer(nil, nil).ServeHTTP(rec, httptest.NewRequest(http.MethodGet, "/health", nil))
