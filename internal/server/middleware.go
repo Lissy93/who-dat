@@ -166,6 +166,9 @@ type bucket struct {
 }
 
 func newLimiter(ratePerSec float64, burst int) *limiter {
+	if burst < 1 {
+		burst = 1 // refills clamp to the burst, so a zero bucket never admits a second request
+	}
 	l := &limiter{buckets: make(map[string]*bucket), rate: ratePerSec, burst: float64(burst)}
 	go l.sweep()
 	return l
