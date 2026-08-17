@@ -9,6 +9,7 @@ import (
 	"net/http/httptest"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/lissy93/who-dat/internal/config"
 	"github.com/lissy93/who-dat/internal/domain"
@@ -217,6 +218,20 @@ func TestValidKeyBypassesRateLimit(t *testing.T) {
 	}
 	if !throttled {
 		t.Fatal("wrong key was never throttled; bypass is too permissive")
+	}
+}
+
+// RATE_BURST is 0 unless it is set or we're on Vercel, so RATE_PER_MINUTE on its own
+// leaves the bucket nothing to refill into and only the first request ever gets in.
+func TestRateLimitWithoutBurst(t *testing.T) {
+	lim := newLimiter(1_000_000, 0) // a token per µs, so a 1ms gap always refills one
+	for i := 0; i < 3; i++ {
+		if i > 0 {
+			time.Sleep(time.Millisecond)
+		}
+		if ok, retry := lim.allow("192.0.2.4"); !ok {
+			t.Fatalf("request %d refused with retry-after %ds, want allowed", i, retry)
+		}
 	}
 }
 
