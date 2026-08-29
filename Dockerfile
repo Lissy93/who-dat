@@ -1,7 +1,7 @@
 # Build a small static Go binary, cross-compiled to the target platform so multi-arch
 # builds compile natively on the runner instead of under slow QEMU emulation. The frontend
 # is embedded via go:embed, so there is no Node build stage.
-FROM --platform=$BUILDPLATFORM golang:1.26-alpine AS build
+FROM --platform=$BUILDPLATFORM golang:1.27-alpine AS build
 WORKDIR /src
 COPY go.mod go.sum ./
 RUN go mod download
